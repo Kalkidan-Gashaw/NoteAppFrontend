@@ -1,0 +1,1 @@
+export  const BASE_URL = "https://noteappbackend-dqm2.onrender.com";
