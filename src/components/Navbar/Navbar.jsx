@@ -13,7 +13,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
   const onLogout = ()=>{
 
     localStorage.clear()
-    navigate('/login')
+    navigate('/')
   }
 
 
