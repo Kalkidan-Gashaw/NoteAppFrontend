@@ -161,6 +161,15 @@ const Home = () => {
                 Please try a different search term.
               </p>
             </div>
+          ) : allNotes.length === 0 ? (
+            <div className="flex flex-col items-center justify-center col-span-full bg-gray-100 p-6 rounded-lg shadow-md mt-4">
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                No Notes Available
+              </h2>
+              <p className="text-gray-600">
+                Click the button below to add your first note!
+              </p>
+            </div>
           ) : (
             (isSearch ? searchResults : allNotes).map((item) => (
               <div key={item._id} className="relative">
